@@ -9,7 +9,7 @@ import redis.clients.jedis.Jedis;
 import java.util.List;
 import java.util.Random;
 
-import static com.jxk.database.redis.keys.redisKeys.geoHashKey;
+import static team.gjz.database.redis.keys.redisKeys.geoHashKey;
 
 /**
  * 测试geohash；
@@ -24,6 +24,10 @@ public class Testgeohash {
         return d * Math.PI / 180.0;
     }
 
+
+    /**
+     * 用来测试存储的平均误差
+     */
     @Test
     public void mytest() {
         Jedis jedis = RedisPoolUtil4J.getConnection();

@@ -1,4 +1,4 @@
-package team.gjz.database.redis.conectTest
+package team.gjz.database.redis.pool
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig
 import redis.clients.jedis.JedisPool

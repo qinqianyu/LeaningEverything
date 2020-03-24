@@ -1,11 +1,14 @@
-package team.gjz.database.redis.Json;
+package team.gjz.database.redis.string;
 
+import team.gjz.database.redis.Json.beans.Guize;
 import team.gjz.database.redis.pool.RedisPoolUtil4J;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static team.gjz.database.redis.keys.redisKeys.testKey;
 
 /**
  * @description:
@@ -35,11 +38,11 @@ public class RedisStringTest {
         ArrayList<Guize> list = new ArrayList<>();
         list.add(build);
         list.add(build);
-        connection.set("mykey".getBytes(),SerializeUtil.serialize(list));
-        byte[] bytes = connection.get("mykey".getBytes());
+        connection.set(testKey.getBytes(),SerializeUtil.serialize(list));
+        byte[] bytes = connection.get(testKey.getBytes());
         List<Guize> unserialize = (List<Guize>)SerializeUtil.unserialize(bytes);
         System.out.println(unserialize);
-        connection.del("mykey");
+        connection.del(testKey);
         connection.close();
     }
 }

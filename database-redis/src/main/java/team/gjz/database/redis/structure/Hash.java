@@ -1,12 +1,12 @@
 package team.gjz.database.redis.structure;
 
 import team.gjz.database.redis.pool.RedisPoolUtil4J;
-import com.jxk.database.redis.util.DateUtil;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import team.gjz.database.redis.util.DateUtil;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

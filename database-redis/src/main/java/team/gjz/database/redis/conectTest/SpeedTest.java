@@ -1,7 +1,8 @@
-package team.gjz.database.redis.pool;
+package team.gjz.database.redis.conectTest;
 
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
+import team.gjz.database.redis.pool.RedisPoolUtil4J;
 
 /**
  * @description:

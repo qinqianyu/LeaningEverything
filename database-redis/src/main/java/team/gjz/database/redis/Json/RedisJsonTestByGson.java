@@ -5,6 +5,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.reflect.TypeToken;
 import com.redislabs.modules.rejson.JReJSON;
 import com.redislabs.modules.rejson.Path;
+import team.gjz.database.redis.Json.beans.CpuCut;
 import team.gjz.database.redis.pool.RedisPoolUtil4J;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import static com.jxk.database.redis.keys.redisKeys.jsonKey;
+import static team.gjz.database.redis.keys.redisKeys.jsonKey;
 
 public class RedisJsonTestByGson {
     private String mykey = jsonKey;
@@ -24,14 +25,14 @@ public class RedisJsonTestByGson {
         CpuCut cpuCut = CpuCut.builder().time(new String[]{new SimpleDateFormat("HH:mm:ss").format(new Date(timeMillis))}).value(new Integer[]{25}).build();
         jsonClient.set(mykey, cpuCut);
 
-        //拿到數組time
+        //拿到数组time
         JsonArray json = RedisPoolUtil4J.getJsonClient().get(mykey, JsonArray.class, new Path(".time"));
         Gson gson = new GsonBuilder().create();
         List<String> times = gson.fromJson(json, new TypeToken<List<String>>() {
         }.getType());
         System.out.println(times);
 
-        // //拿到數組value
+        // //拿到数组value
         json = RedisPoolUtil4J.getJsonClient().get(mykey, JsonArray.class, new Path(".value"));
         List<String> values = gson.fromJson(json, new TypeToken<List<String>>(){}.getType());
         System.out.println(values);

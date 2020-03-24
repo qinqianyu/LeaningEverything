@@ -5,6 +5,7 @@ import org.junit.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.commands.ProtocolCommand;
 import redis.clients.jedis.params.SetParams;
+import team.gjz.database.redis.pool.RedisPoolUtil;
 
 import java.io.*;
 import java.util.List;
