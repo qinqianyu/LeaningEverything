@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LeaningEverything.iml" filepath="$PROJECT_DIR$/LeaningEverything.iml" />
       <module fileurl="file://$PROJECT_DIR$/database-es/database-es.iml" filepath="$PROJECT_DIR$/database-es/database-es.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database-mysql/database-mysql.iml" filepath="$PROJECT_DIR$/database-mysql/database-mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database-neo4j/database-neo4j.iml" filepath="$PROJECT_DIR$/database-neo4j/database-neo4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/database-redis/database-redis.iml" filepath="$PROJECT_DIR$/database-redis/database-redis.iml" />
     </modules>
   </component>
