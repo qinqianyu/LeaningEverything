@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>LeaningEverything</artifactId>
+        <groupId>team.gjz</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>database-redis</artifactId>
+
+    <dependencies>
+
+        <!--引入redis的java客户端-->
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <!--引入布隆过滤器java客户端依赖于redis.clients.jedis3.0.0-->
+        <!-- https://mvnrepository.com/artifact/com.redislabs/jrebloom -->
+        <dependency>
+            <groupId>com.redislabs</groupId>
+            <artifactId>jrebloom</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <!--引入Json java客户端依赖于redis.clients.jedis3.0.0-->
+        <dependency>
+            <groupId>com.redislabs</groupId>
+            <artifactId>jrejson</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+
+
+        <!--引入fastjson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.31</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
