@@ -40,7 +40,7 @@ public class RedisStringTest {
         list.add(build);
         connection.set(testKey.getBytes(),SerializeUtil.serialize(list));
         byte[] bytes = connection.get(testKey.getBytes());
-        List<Guize> unserialize = (List<Guize>)SerializeUtil.unserialize(bytes);
+        List<Guize> unserialize = SerializeUtil.unserialize(bytes);
         System.out.println(unserialize);
         connection.del(testKey);
         connection.close();

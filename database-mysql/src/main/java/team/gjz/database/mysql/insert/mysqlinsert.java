@@ -1,8 +1,6 @@
 package team.gjz.database.mysql.insert;
 
 
-import team.gjz.database.mysql.RandomStringSample;
-
 import java.sql.*;
 import java.util.HashSet;
 import java.util.Random;

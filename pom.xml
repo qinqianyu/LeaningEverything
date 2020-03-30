@@ -13,6 +13,8 @@
         <module>database-es</module>
         <module>database-mysql</module>
         <module>database-neo4j</module>
+        <module>javabase</module>
+        <module>tools</module>
     </modules>
     <properties>
         <!--jdk的版本设置-->

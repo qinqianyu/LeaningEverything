@@ -1,4 +1,4 @@
-package team.gjz.database.neo4j;
+package team.gjz.database.mysql.insert;
 
 
 import java.io.UnsupportedEncodingException;
