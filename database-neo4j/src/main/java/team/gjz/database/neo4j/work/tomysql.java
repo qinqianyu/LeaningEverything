@@ -1,4 +1,4 @@
-package team.gjz.database.neo4j;
+package team.gjz.database.neo4j.work;
 
 import java.sql.*;
 import java.util.ArrayList;

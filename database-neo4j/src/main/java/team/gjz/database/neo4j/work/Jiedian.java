@@ -1,4 +1,4 @@
-package team.gjz.database.neo4j;
+package team.gjz.database.neo4j.work;
 
 public class Jiedian {
     private int gid;
