@@ -7,7 +7,7 @@ import redis.clients.jedis.Jedis;
 import java.util.Set;
 
 /**
- * @description:
+ * @description: 字符串加一，进行迷糊匹配，123*用[123,124)来作区间匹配
  * @author: jxk
  * @create: 2020-03-06 08:58
  **/

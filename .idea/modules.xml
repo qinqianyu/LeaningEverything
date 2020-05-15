@@ -7,6 +7,10 @@
       <module fileurl="file://$PROJECT_DIR$/database-mysql/database-mysql.iml" filepath="$PROJECT_DIR$/database-mysql/database-mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/database-neo4j/database-neo4j.iml" filepath="$PROJECT_DIR$/database-neo4j/database-neo4j.iml" />
       <module fileurl="file://$PROJECT_DIR$/database-redis/database-redis.iml" filepath="$PROJECT_DIR$/database-redis/database-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database-es/es-first/es-first.iml" filepath="$PROJECT_DIR$/database-es/es-first/es-first.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database-es/es-second/es-second.iml" filepath="$PROJECT_DIR$/database-es/es-second/es-second.iml" />
+      <module fileurl="file://$PROJECT_DIR$/es-test/es-test.iml" filepath="$PROJECT_DIR$/es-test/es-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hanlp/hanlp.iml" filepath="$PROJECT_DIR$/hanlp/hanlp.iml" />
       <module fileurl="file://$PROJECT_DIR$/javabase/javabase.iml" filepath="$PROJECT_DIR$/javabase/javabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/tools/tools.iml" filepath="$PROJECT_DIR$/tools/tools.iml" />
     </modules>

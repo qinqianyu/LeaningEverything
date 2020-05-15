@@ -8,14 +8,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>database-es</artifactId>
-    <packaging>pom</packaging>
 
-    <modules>
-        <module>es-first</module>
-        <module>es-second</module>
-    </modules>
+    <artifactId>es-test</artifactId>
+
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
@@ -27,7 +24,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.2.5.RELEASE</version>
         </dependency>
-        <!--        引入fastjson-->
+        <!--引入fastjson-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -46,6 +43,19 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.2.6.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>compile</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>io.springfox</groupId>
@@ -59,17 +69,13 @@
             <version>2.9.2</version>
         </dependency>
 
-
     </dependencies>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.2.5.RELEASE</version>
             </plugin>
         </plugins>
     </build>
-
-
 </project>

@@ -1,0 +1,11 @@
+server:
+  port: 8080
+#spring:
+#  data:
+#    elasticsearch:
+#      cluster-name: my-clusters
+#      #cluster-nodes: 192.168.20.134:9300,192.168.20.138:9300,192.168.20.139:9300
+#      cluster-nodes: 192.168.20.134:9300,192.168.20.138:9300,192.168.20.139:9300
+#      repositories:
+#        enabled: true
+
